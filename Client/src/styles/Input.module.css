@@ -1,0 +1,55 @@
+.container {
+	max-width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container form {
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #eee;
+	border-radius: 15px;
+	background-color: #fff;
+	padding: 30px;
+	max-width: 350px;
+}
+
+.container form input {
+	padding: 9px;
+	font-size: 16px;
+	border: 1px solid #eee;
+	gap: 5px;
+}
+
+.button {
+	background-color: green;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 10px;
+	font-weight: 200;
+	color: white;
+	cursor: pointer;
+	cursor: hand;
+}
+
+.button:hover {
+	opacity: 0.7;
+}
+
+.starship {
+	background-color: antiquewhite;
+	max-width: 300px;
+	border-radius: 15px;
+	text-transform: capitalize;
+	padding: 10px;
+	text-align: center;
+}
+
+.starship h3 {
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.starship p {
+	font-weight: 400;
+}

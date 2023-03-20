@@ -1,0 +1,17 @@
+.planet {
+	background-color: antiquewhite;
+	min-width: 300px;
+	border-radius: 15px;
+	text-transform: capitalize;
+	padding: 10px;
+	text-align: center;
+}
+
+.planet h3 {
+	font-weight: 700;
+	font-size: 25px;
+}
+
+.planet p {
+	font-weight: 400;
+}

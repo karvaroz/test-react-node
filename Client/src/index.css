@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap");
+
+body {
+	color: #1a1a1a;
+	font-family: "Poppins", sans-serif;
+	background: hsla(141, 54%, 86%, 1);
+
+	background: linear-gradient(
+		to right,
+		hsla(141, 54%, 86%, 1) 0%,
+		hsla(333, 73%, 85%, 1) 50%,
+		hsla(211, 58%, 79%, 1) 100%
+	);
+
+	background: -moz-linear-gradient(
+		to right,
+		hsla(141, 54%, 86%, 1) 0%,
+		hsla(333, 73%, 85%, 1) 50%,
+		hsla(211, 58%, 79%, 1) 100%
+	);
+
+	background: -webkit-linear-gradient(
+		to right,
+		hsla(141, 54%, 86%, 1) 0%,
+		hsla(333, 73%, 85%, 1) 50%,
+		hsla(211, 58%, 79%, 1) 100%
+	);
+}
