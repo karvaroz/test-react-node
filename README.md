@@ -53,7 +53,3 @@ Start the server
 ```
 
 After all this => You can find the interface on http://localhost:5173/
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
