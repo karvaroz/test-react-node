@@ -1,5 +1,4 @@
 import express from "express";
-import * as dotenv from "dotenv";
 import cors from "cors";
 import bodyParser from "body-parser";
 import morgan from "morgan";
@@ -16,8 +15,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 app.use(cors());
 app.use(bodyParser.json());
-
-dotenv.config();
 
 app.listen(PORT, () => {
 	console.log(`Server is listening on port ${PORT}`);
