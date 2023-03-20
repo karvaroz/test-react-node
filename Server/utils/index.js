@@ -34,6 +34,14 @@ export const getApiData = async (resource, page) => {
 	return totalResults;
 };
 
+export const randomPageNumber = (min = 1, max = 4) => {
+	let difference = max - min;
+	let rand = Math.random();
+	rand = Math.floor(rand * difference);
+	rand = rand + min;
+	return rand;
+};
+
 export const getTerrainsFromList = async (planetList) => {
 	let terrains = [];
 

@@ -7,7 +7,7 @@ import { terrains } from "../utils";
 const ChallengeFive = () => {
 	const Terrains = Array.from(new Set(terrains));
 	const [terrain, setTerrain] = useState("");
-	const [planet, setPlanet] = useState([]);
+	const [planet, setPlanet] = useState({});
 	const [msg, setMsg] = useState("");
 
 	const onOptionChange = (e) => {
@@ -59,13 +59,12 @@ const ChallengeFive = () => {
 				</div>
 			</div>
 			{msg !== "" && <h2>{msg}</h2>}
-			{planet &&
-				planet.map((p, idx) => (
-					<Planet
-						planet={p}
-						key={idx}
-					/>
-				))}
+			{planet && (
+				<Planet
+					planet={planet}
+					key={planet.name}
+				/>
+			)}
 		</div>
 	);
 };

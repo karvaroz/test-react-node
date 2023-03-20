@@ -16,9 +16,8 @@ const Planet = ({ planet }) => {
 				<p>climate: {planet.climate}</p>
 				<p>
 					Terrain:{" "}
-					{planet.terrain.map((t, idx) => (
-						<span key={idx}>{t} </span>
-					))}
+					{planet.terrain &&
+						planet.terrain.map((t, idx) => <span key={idx}>{t} </span>)}
 				</p>
 			</div>
 		</div>

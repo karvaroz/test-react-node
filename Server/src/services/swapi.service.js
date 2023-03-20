@@ -2,11 +2,15 @@ import axios from "axios";
 import {
 	checkStarshipCapacities,
 	getPlanetWithBiggestPopulation,
+	randomPageNumber,
 	terrainPlanetsMatched,
 } from "../../utils/index.js";
 
 export const getFastestShipService = async (passengers) => {
-	const response = await axios.get(`https://swapi.dev/api/starships/`);
+	const page = randomPageNumber();
+	const response = await axios.get(
+		`https://swapi.dev/api/starships/?page=${page}`
+	);
 	const starships = response.data.results;
 	const shipsWithCapacity = checkStarshipCapacities(starships, passengers);
 	const shipsFiltered = shipsWithCapacity.filter((ship) => {
@@ -26,7 +30,10 @@ export const getFastestShipService = async (passengers) => {
 };
 
 export const getplanetByTerrainService = async (terrain) => {
-	const response = await axios.get(`https://swapi.dev/api/planets/`);
+	const page = randomPageNumber();
+	const response = await axios.get(
+		`https://swapi.dev/api/planets/?page=${page}`
+	);
 	const planets = response.data.results;
 	planets.forEach((planet) => {
 		planet.terrain = planet.terrain.split(/\s*,\s*/);
