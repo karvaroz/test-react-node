@@ -30,10 +30,7 @@ export const getFastestShipService = async (passengers) => {
 };
 
 export const getplanetByTerrainService = async (terrain) => {
-	const page = randomPageNumber();
-	const response = await axios.get(
-		`https://swapi.dev/api/planets/?page=${page}`
-	);
+	const response = await axios.get(`https://swapi.dev/api/planets/`);
 	const planets = response.data.results;
 	planets.forEach((planet) => {
 		planet.terrain = planet.terrain.split(/\s*,\s*/);
